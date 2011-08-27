@@ -3,44 +3,29 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Plugin::DistManifestTests;
-# ABSTRACT: Release tests for the manifest
+# ABSTRACT: (DEPRECATED) Release tests for the manifest
+# VERSION
 use Moose;
-extends 'Dist::Zilla::Plugin::InlineFiles';
+extends 'Dist::Zilla::Plugin::Test::DistManifest';
+
+before register_component => sub {
+    warn '!!! [DistManifestTests] is deprecated and will be removed in a future release; replace it with [Test::DistManifest]';
+};
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
 1;
 
-=begin :prelude
-
 =for test_synopsis
 1;
 __END__
 
-=end :prelude
-
 =head1 SYNOPSIS
+
+Please use L<Dist::Zilla::Plugin::Test::DistManifest>.
 
 In C<dist.ini>:
 
-    [DistManifestTests]
-
-=head1 DESCRIPTION
-
-This is an extension of L<Dist::Zilla::Plugin::InlineFiles>, providing the
-following file:
-
-  xt/release/dist-manifest.t - a standard Test::DistManifest test
+    [Test::DistManifest]
 
 =cut
-
-__DATA__
-___[ xt/release/dist-manifest.t ]___
-#!perl
-
-use Test::More;
-
-eval "use Test::DistManifest";
-plan skip_all => "Test::DistManifest required for testing the manifest"
-  if $@;
-manifest_ok();

@@ -1,1 +1,3 @@
 Dist-Zilla-Plugin-DistManifestTests-*
+Dist-Zilla-Plugin-Test-DistManifest*
+.build
