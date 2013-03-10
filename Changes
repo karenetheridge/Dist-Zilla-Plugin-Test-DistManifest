@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Fix spurious failures in deprecated.t with v5.17.9
 
 2.000002  2012-06-16
     - Use a decimal version number
