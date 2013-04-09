@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+2.000003  2013-04-09
     - Fix spurious failures in deprecated.t with v5.17.9
 
 2.000002  2012-06-16

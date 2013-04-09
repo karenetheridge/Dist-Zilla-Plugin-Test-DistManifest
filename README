@@ -2,7 +2,7 @@ NAME
     Dist::Zilla::Plugin::Test::DistManifest - Release tests for the manifest
 
 VERSION
-    version 2.000002
+    version 2.000003
 
 SYNOPSIS
     In "dist.ini":
