@@ -18,7 +18,7 @@ my %module_build_args = (
     "Mike Doherty <doherty\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-Plugin-Test-DistManifest",
-  "dist_version" => "2.000003",
+  "dist_version" => "2.000004",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Plugin::Test::DistManifest",
   "recommends" => {},
@@ -33,9 +33,7 @@ my %module_build_args = (
   },
   "script_files" => [],
   "test_requires" => {
-    "File::Find" => 0,
-    "File::Path" => 0,
-    "File::Temp" => 0,
+    "Capture::Tiny" => 0,
     "Moose::Autobox" => 0,
     "Test::DZil" => 0,
     "Test::More" => "0.96",
