@@ -1,21 +1,22 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+  - Don't shoot ourselves in the foot in the tests [kentnl; GH #1]
 
 2.000003  2013-04-09
-    - Fix spurious failures in deprecated.t with v5.17.9
+  - Fix spurious failures in deprecated.t with v5.17.9
 
 2.000002  2012-06-16
-    - Use a decimal version number
+  - Use a decimal version number
 
 2.0.1     2011-09-07
-    - packaging updates
+  - packaging updates
 
 2.0.0     2011-09-07
-    - fixed POD
-    - Renamed to Dist::Zilla::Plugin::Test::DistManifest
+  - fixed POD
+  - Renamed to Dist::Zilla::Plugin::Test::DistManifest
 
 1.101420  2010-05-22 15:47:40 Europe/Vienna
 
 1.100710  2010-03-12 10:31:47 Europe/Vienna
-    - original version
+  - original version
