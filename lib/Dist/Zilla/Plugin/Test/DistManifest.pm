@@ -9,6 +9,19 @@ our $VERSION = '2.000006';
 
 use Moose;
 extends 'Dist::Zilla::Plugin::InlineFiles';
+with 'Dist::Zilla::Role::PrereqSource';
+
+sub register_prereqs
+{
+    my $self = shift;
+    $self->zilla->register_prereqs(
+        {
+            type  => 'requires',
+            phase => 'develop',
+        },
+        'Test::DistManifest' => 0,
+    );
+}
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
@@ -35,11 +48,9 @@ following file:
 
 __DATA__
 ___[ xt/release/dist-manifest.t ]___
-#!perl
-
+use strict;
+use warnings;
 use Test::More;
 
-eval "use Test::DistManifest";
-plan skip_all => "Test::DistManifest required for testing the manifest"
-  if $@;
+use Test::DistManifest;
 manifest_ok();
