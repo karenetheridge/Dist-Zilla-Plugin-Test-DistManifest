@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+  - Test::DistManifest is added as a develop prereq, and the test will fail if
+    it is not available [Graham Knop; GH #3]
 
 2.000005  2015-01-22
   - Remove dependency on Moose::Autobox for tests [kentnl; GH #2]
