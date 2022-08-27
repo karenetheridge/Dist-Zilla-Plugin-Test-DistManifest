@@ -44,6 +44,8 @@ following file:
 
   xt/release/dist-manifest.t - a standard Test::DistManifest test
 
+=for Pod::Coverage register_prereqs
+
 =cut
 
 __DATA__
