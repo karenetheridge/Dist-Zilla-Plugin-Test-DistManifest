@@ -1,3 +1,7 @@
+/.ackrc
+/.build/
+!/.gitignore
+/.latest
 Dist-Zilla-Plugin-DistManifestTests-*
-Dist-Zilla-Plugin-Test-DistManifest*
-.build
+Dist-Zilla-Plugin-Test-DistManifest-*/
+Dist-Zilla-Plugin-Test-DistManifest-*.tar.gz
